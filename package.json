@@ -1,6 +1,6 @@
 {
   "name": "husky-silent",
-  "version": "0.11.9",
+  "version": "1.0.0",
   "description": "Fork of husky which hides npm Err messages",
   "main": "index.js",
   "scripts": {
