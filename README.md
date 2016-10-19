@@ -1,64 +1,33 @@
-# husky [![](http://img.shields.io/npm/dm/husky.svg?style=flat)](https://www.npmjs.org/package/husky) [![npm version](https://badge.fury.io/js/husky.svg)](http://badge.fury.io/js/husky) [![Build Status](https://travis-ci.org/typicode/husky.svg?branch=master)](https://travis-ci.org/typicode/husky)
+# husky-silent
 
-> Git hooks made easy
-
-Husky can prevent bad commit, push and more :dog: _woof!_
-
-_Used by [jQuery](https://github.com/jquery/jquery), [HyperTerm](https://github.com/zeit/hyperterm), [Paper.js](https://github.com/paperjs/paper.js), [Kibana](https://github.com/elastic/kibana), [JSON Server](https://github.com/typicode/json-server), [Hotel](https://github.com/typicode/hotel), ... and many other awesome projects._
+This project is a fork of [husky](https://github.com/typicode/husky) with an additional config to
+silence all these pesky `npm ERR` messages.
 
 ## Usage
 
-```
-npm install husky --save-dev
+Same as [husky](https://github.com/typicode/husky). Simply install it:
+
+```bash
+npm install husky-silent --save-dev
 ```
 
-```javascript
-// package.json
+Silencing `npm ERR` messages by adding a config setting to your `package.json`:
+
+```json
 {
-  "scripts": {
-    "precommit": "npm test",
-    "prepush": "npm test",
-    "...": "..."
+  "name": "mypackage",
+  "config": {
+    "husky": {
+      "silent": "true"
+    }
   }
 }
 ```
 
-```bash
-git commit -m "Keep calm and commit"
-```
+## More Information
 
-Existing hooks aren't replaced and adding `--no-verify` to your git commands lets you bypass hooks. You can also use [any Git hook](HOOKS.md).  Optionally include the environment variable `$GIT_PARAMS` in your scripts to access any command-line parameters provided by git.
-
-## Tips
-
-### Debug
-
-If you need to debug hooks, use `npm run <script-name>`, for example:
-
-```bash
-npm run precommit
-```
-
-### GUI applications
-
-If you've installed Node using the [standard installer](https://nodejs.org/en/), [nvm](https://github.com/creationix/nvm) or [homebrew](http://brew.sh/), git hooks will be executed even in GUI applications.
-
-### NVM
-
-If you're using [nvm](https://github.com/creationix/nvm), husky will try to use the `default` installed version or use the project `.nvmrc` file.
-
-### Git params
-
-Git params can be found in `GIT_PARAMS` environment variable.
-
-### Uninstall
-
-To uninstall husky and Git hooks, simply run:
-
-```bash
-npm uninstall husky --save-dev
-```
+For more information see the upstream [husky repository](https://github.com/typicode/husky).
 
 ## License
 
-MIT - [typicode](https://github.com/typicode)
+MIT

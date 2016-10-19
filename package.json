@@ -1,7 +1,7 @@
 {
-  "name": "husky",
+  "name": "husky-silent",
   "version": "0.11.9",
-  "description": "Prevents bad commit or push (git hooks, pre-commit/precommit, pre-push/prepush, post-merge/postmerge and all that stuff...)",
+  "description": "Fork of husky which hides npm Err messages",
   "main": "index.js",
   "scripts": {
     "test": "node test",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/typicode/husky.git"
+    "url": "git@github.com:marvinhagemeister/husky.git"
   },
   "keywords": [
     "git",
@@ -26,12 +26,9 @@
     "postmerge",
     "test"
   ],
-  "author": "Typicode <typicode@gmail.com>",
+  "author": "Marvin Hagemeister <marvin@marvinhagemeisterde>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/typicode/husky/issues"
-  },
-  "homepage": "https://github.com/typicode/husky",
+  "homepage": "https://github.com/marvinhagemeister/husky/tree/husky-silent",
   "devDependencies": {
     "rimraf": "^2.2.8"
   },
