@@ -1,4 +1,4 @@
-# husky-silent
+# husky-dontbark
 
 This project is a fork of [husky](https://github.com/typicode/husky) with an additional config to
 silence all these pesky `npm ERR` messages.
@@ -8,7 +8,7 @@ silence all these pesky `npm ERR` messages.
 Same as [husky](https://github.com/typicode/husky). Simply install it:
 
 ```bash
-npm install husky-silent --save-dev
+npm install husky-dontbark --save-dev
 ```
 
 Silencing `npm ERR` messages by adding a config setting to your `package.json`:

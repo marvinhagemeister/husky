@@ -1,5 +1,5 @@
 {
-  "name": "husky-silent",
+  "name": "husky-dontbark",
   "version": "1.0.0",
   "description": "Fork of husky which hides npm Err messages",
   "main": "index.js",
@@ -28,7 +28,7 @@
   ],
   "author": "Marvin Hagemeister <marvin@marvinhagemeisterde>",
   "license": "MIT",
-  "homepage": "https://github.com/marvinhagemeister/husky/tree/husky-silent",
+  "homepage": "https://github.com/marvinhagemeister/husky/tree/husky-dontbark",
   "devDependencies": {
     "rimraf": "^2.2.8"
   },
